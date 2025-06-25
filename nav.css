@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Ruslan+Display&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-gap: 20px;
+    background: linear-gradient(to right, #4d0c6b, #0ba194);
+}
+        
+header {
+    grid-area: header;
+     background-image: radial-gradient(circle at top left, rgb(78, 11, 11), rgb(70, 3, 70),rgb(4, 4, 51));
+    color: rgb(158, 92, 92);
+    padding: 20px;
+    text-align: center;
+}
+        
+nav {
+    grid-area: nav;
+    background-image: radial-gradient(circle at top left, rgb(78, 11, 11), rgb(70, 3, 70),rgb(4, 4, 51));
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+        
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+        
+nav a {
+    text-decoration: none;
+    color: #aca0a0;
+}
+
+nav a:hover {
+    color: #0d7a37;
+}
+        
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+        
+footer {
+    grid-area: footer;
+    background: #333;
+    color: rgb(178, 197, 212);
+    text-align: center;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    color: #10817c;
+      font-family: "Ruslan Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+    border-bottom: 1px solid #8238e2;
+    padding-bottom: 10px;
+}
+        
+.back-to-top {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
